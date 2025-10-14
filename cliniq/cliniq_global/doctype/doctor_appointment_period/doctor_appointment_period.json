@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-26 16:16:30.401290",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cq_appointment_period",
+  "cq_max_appointment",
+  "availabe"
+ ],
+ "fields": [
+  {
+   "fieldname": "cq_appointment_period",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Appointment Period",
+   "link_filters": "[[\"Appointment Period\",\"is_active_period\",\"=\",1]]",
+   "options": "Appointment Period",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cq_max_appointment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Maximum Appointment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "availabe",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Availabe",
+   "options": "Yes\nNo",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-27 00:03:48.680467",
+ "modified_by": "Administrator",
+ "module": "CliniQ Global",
+ "name": "Doctor Appointment Period",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
